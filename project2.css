@@ -15,7 +15,7 @@ body{
   -webkit-font-smoothing:antialiased;
 
   background:
-    url("img/bg2.jpeg");
+    url("bg.jpeg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -315,4 +315,5 @@ textarea{
 }
 
 /* Utility */
+
 .hidden{display:none}
