@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login — Promo Web</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <nav class="site-nav" role="navigation" aria-label="Main">
+        <div class="nav-brand">
+            <a href="project2.html" title="Home">
+                <img class="nav-logo" src="img/logo.jpeg" alt="Promo Web logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="project.html" class="active">Login</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+
+    <header class="promo-header" style="text-align:center; padding:24px 0; color:#fff;">
+        <h1 style="margin:0; font-size:28px;">Promo Web</h1>
+        <p style="margin:6px 0 0; opacity:0.9;">Sign in to access exclusive offers and your account</p>
+    </header>
+
+    <main class="container" style="max-width:720px; margin:28px auto; padding:16px;">
+        <section id="login-form-container" class="highlights" style="padding:20px; border-radius:8px;">
+            <h2 style="margin-top:0; color:#fff; text-align:center;">Login</h2>
+
+            <form id="loginform" autocomplete="on" novalidate>
+                <label for="username" style="color:#fff;">Username</label><br>
+                <input type="text" name="Username" id="username" required><br>
+
+                <label for="password" style="color:#fff;">Password</label><br>
+                <input type="password" name="password" id="password" required><br>
+
+                <button type="submit" id="login-btn">Login</button>
+            </form>
+
+            <div class="alt-actions" style="margin-top:12px; text-align:center;">
+                <button type="button" id="show-register">Create account</button>
+            </div>
+
+            <!-- registration form hidden by default -->
+            <form id="register-form" class="hidden" style="margin-top:16px;">
+                <h3 style="color:#fff; margin-top:0;">Create an account</h3>
+
+                <label for="reg-username" style="color:#fff;">Username</label><br>
+                <input type="text" id="reg-username" name="reg-username" required><br>
+
+                <label for="reg-email" style="color:#fff;">Email</label><br>
+                <input type="email" id="reg-email" name="reg-email" required><br>
+
+                <label for="reg-password" style="color:#fff;">Password</label><br>
+                <input type="password" id="reg-password" name="reg-password" required><br>
+
+                <label for="reg-password-confirm" style="color:#fff;">Confirm password</label><br>
+                <input type="password" id="reg-password-confirm" name="reg-password-confirm" required><br>
+
+                <div style="margin-top:10px;">
+                    <button type="submit" id="register-btn">Create account</button>
+                    <button type="button" id="cancel-register">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="project2.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>
